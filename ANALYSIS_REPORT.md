@@ -1,41 +1,57 @@
-# NFL 2024 Quantitative Analysis Report
+# NFL 2025 Championship Week Analysis Report
+**Season**: 2025-2026
+**Week**: 17 (Championship)
 
-## Top 10 Most Impressive Players
-This ranking is based on a composite score of Advanced Metrics:
-- **QBs**: EPA/Play (60%) + CPOE (40%)
-- **RBs**: EPA/Play (50%) + Success Rate (50%)
-- **WRs/TEs**: EPA/Target (60%) + Expected YAC EPA (40%)
+## Executive Summary
+This report analyzes your fantasy roster for the Championship Week using **2025 Season Data**. The recommendations are derived from a composite score of:
+1.  **Player Form (70%)**: Weighted EPA (Expected Points Added) and Success Rate over the last 5 weeks.
+2.  **Matchup Favorability (30%)**: Opponent defensive efficiency (EPA allowed) against the player's position.
 
-| Rank | Player | Position | Team | Impressiveness Score |
+### 🏆 Top Start Recommendations
+| Player | Position | Opponent | Composite Score | Notes |
 |---|---|---|---|---|
-| 1 | Lamar Jackson | QB | BAL | 2.84 |
-| 2 | Josh Allen | QB | BUF | 2.71 |
-| 3 | Patrick Mahomes | QB | KC | 2.55 |
-| 4 | Christian McCaffrey | RB | SF | 2.30 |
-| 5 | Tyreek Hill | WR | MIA | 2.15 |
-| 6 | Justin Jefferson | WR | MIN | 2.10 |
-| 7 | Joe Burrow | QB | CIN | 2.05 |
-| 8 | C.J. Stroud | QB | HOU | 1.95 |
-| 9 | Myles Garrett | DE | CLE | 1.90 |
-| 10 | T.J. Watt | LB | PIT | 1.85 |
+| **Jaxon Smith-Njigba** | WR | CAR | **0.445** | **Elite Form**. Must start against weak CAR secondary. |
+| **Trey McBride** | TE | CIN | **0.362** | Top-tier TE production. |
+| **Chris Olave** | WR | TEN | **0.208** | Strong WR2 play. |
+| **Brock Purdy** | QB | CHI | **0.170** | Solid QB1 start. |
 
-![Top 10 Players](output/top_10_players.png)
+---
 
-## Super Bowl Prediction Thesis
-### Predicted Winner: **Detroit Lions**
+## Detailed Roster Analysis
 
-**Quantitative Reasoning:**
-The prediction model values a balanced team with a slight bias towards elite offense.
-- **Offensive EPA/Play**: 0.152 (Z-Score: 2.10)
-- **Defensive EPA/Play**: -0.055 (Z-Score: 1.20)
-- **Composite Prediction Score**: 1.74
+### Running Back Dilemma
+The model identifies a surprising hierarchy for your RB/FLEX spots:
 
-Historically, teams with top-tier efficiency in both passing offense and pass defense correlate strongly with Super Bowl success. The **Detroit Lions** currently exhibit the best combination of these metrics, boasting a top-3 offense and a significantly improved defense compared to last year.
+1.  **T. Henderson (New England)**: **0.093 Score**.
+    *   *Reasoning*: Currently shows better efficiency per touch than McCaffrey in recent weeks, combined with a neutral matchup vs NYJ.
+2.  **Christian McCaffrey (San Francisco)**: **0.032 Score**.
+    *   *Reasoning*: While a superstar, his *efficiency* (EPA/play) has been average recently. He is still a safe start due to volume, but the model flags Henderson as the "hot hand".
+3.  **Tyrone Tracy (Giants)**: **-0.040 Score**.
+    *   *Reasoning*: Negative EPA indicates inefficient touches. Tougher spot vs Las Vegas.
+4.  **Ashton Jeanty (Raiders)**: **-0.127 Score**.
+    *   *Reasoning*: **STRONGLY SIT**. Extremely poor recent efficiency (-0.268 EPA). Despite a "good" matchup on paper vs NYG, his performance does not warrant a championship start.
 
-### Team Tiers
-The following chart visualizes the offensive vs defensive efficiency of all teams.
-![Team Tiers](output/team_tiers.png)
+### Full Rankings Table
 
-### QB Efficiency
-Quarterback play is the single most important factor. Here is how the league's QBs stack up:
-![QB Efficiency](output/qb_efficiency.png)
+| Rank | Player | Pos | Opp | Form EPA | Matchup Grade | Composite |
+|---|---|---|---|---|---|---|
+| 1 | J. Smith-Njigba | WR | CAR | 0.623 | Hard | 0.445 |
+| 2 | T. McBride | TE | CIN | 0.449 | Neutral | 0.362 |
+| 3 | C. Olave | WR | TEN | 0.297 | Neutral | 0.208 |
+| 4 | B. Purdy | QB | CHI | 0.222 | Soft | 0.170 |
+| 5 | T. Henderson | RB | NYJ | 0.150 | Hard | 0.093 |
+| 6 | C. McCaffrey | RB | CHI | 0.054 | Neutral | 0.032 |
+| 7 | T. Tracy | RB | LV | -0.035 | Neutral | -0.040 |
+| 8 | A. Jeanty | RB | NYG | -0.268 | Soft | -0.127 |
+
+### Optimal Lineup Construction
+*   **QB**: B. Purdy
+*   **RB1**: T. Henderson
+*   **RB2**: C. McCaffrey
+*   **WR1**: J. Smith-Njigba
+*   **WR2**: C. Olave
+*   **TE**: T. McBride
+*   **FLEX**: (Check Waivers or Bench) -- *Jeanty/Tracy are risky options.*
+
+> [!TIP]
+> **Key Insight**: Do not be fooled by Ashton Jeanty's name value or the "implied" favorable matchup. The metrics show he is currently detrimental to fantasy scoring probability relative to your other options.
